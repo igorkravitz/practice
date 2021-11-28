@@ -119,6 +119,17 @@ class PracticeStr
     # puts str
   end
 
+  # task 9
+  # Дан текст. Найдите все URL адреса и вычлените из них ссылку на корневую
+  # страницу сайта (например, из http://ru.wikibooks.org/wiki/Ruby
+  # сделайте http://ru.wikibooks.org)
+  def task9
+    str = 'различный текст, http://ya.ru?p1=3&p2=5, https://google.com/market,
+      http://ford.com/testdrive/test.html, http://en.microsoft.com/dotnet.htm,
+      ftp://postservice.com/post.shtml'
+    str.scan(%r{https?://[^ ]*?(?=[/?])}i) { |w| puts w }
+  end
+
   def main
     # task1
     # task2
@@ -127,7 +138,8 @@ class PracticeStr
     # task5
     # task6
     # task7
-    task8
+    # task8
+    task9
   end
 end
 
