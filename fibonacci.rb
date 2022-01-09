@@ -7,8 +7,8 @@ def fib(num)
     fib(num - 1) + fib(num - 2)
   end
 end
-start = Time.now
 n = 40
+start = Time.now
 # puts fib(ARGV[0].to_i)
 puts fib(n)
 puts Time.now - start
