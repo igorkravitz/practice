@@ -7,7 +7,7 @@ def fib(num)
     fib(num - 1) + fib(num - 2)
   end
 end
-n = 40
+n = 20
 start = Time.now
 # puts fib(ARGV[0].to_i)
 puts fib(n)
